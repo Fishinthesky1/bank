@@ -27,7 +27,7 @@ class SavingsAccount(Account):
         
 class CurrentAccount(Account):
     def __init__(self, balance, overdraft_limit):
-        super().__init__(balance)
+        super().__init__( balance)
         self.overdraft_limit = overdraft_limit
         
     def send_overdraft_notice(self):
